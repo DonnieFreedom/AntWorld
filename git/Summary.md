@@ -22,26 +22,42 @@
 
 - [git官方文档](https://git-scm.com/doc)
 
-- 空仓库使用
+- 创建本地仓库并关联远程仓库地址, 使之成为master仓库
+
+  ```
+  echo "# h1" >> README.md
+  git init
+  git add README.md
+  git commit -m 'init'
+  git branch -M 分支名master # 重命名分支名
+  git remote add origin 远程仓库地址 # 关联远程仓库地址 
+  git push -u origin 分支名master # 推送一个分支到远程仓库
+  ```
+
+- 将本地仓库推送到远程仓库地址, 使之成为master仓库
+
+  ```
+  git remote add origin https://github.com/DonnieFreedom/Empty.git
+  git branch -M master
+  # git pull -–rebase origin master # 把远程库中的更新合并到（pull=fetch+merge）本地库中，–-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中
+  git push -u origin master
+  ```
+
+  
+
+- 即新建远程分支:本地创建仓库时, 推送到远程分支, 而远程库与本地库不一致时需要git pull
 
   - ```
-    echo "# h1" >> README.md
-    git init
-    git add .
-    git commit -m 'nothing'
-    # git remote add origin 远程仓库url
-    # git pull origin master # 
-    git push -u origin/master master #将远程仓库origin的master(可省)与本地master关联
+    git init 
+    git remote add origin https://github.com/DonnieFreedom/Empty.git
+    git branch -M 新建分支名
+    # git pull -–rebase origin master # 把远程库中的更新合并到（pull=fetch+merge）本地库中，–-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中
+    git push -u origin 新建分支名
     ```
+  
+  
 
-- 本地检出一个新的分支并推送到远程仓库
-
-  - ```
-    git checkout -b '分支名'
-    git push -u origin 分支名
-    ```
-
-- 拉取指定分支到本地
+- 拉取指定分支到本地分支
 
   - ```
     git checkout -b 本地分支名 origin/远程分支名
@@ -49,7 +65,10 @@
 
   - ```
     如果拉取不成功, 请先执行 git fetch
+    原因
+    1, 远程没有该分支
+    2, git branch -r 查看本地缓存的所有远程分支, 远程分支名不在本地缓存里, 故报错
     ```
 
-- 
+  
 

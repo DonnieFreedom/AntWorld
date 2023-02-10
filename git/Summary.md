@@ -49,7 +49,7 @@
 
   - ```
     git init 
-    git remote add origin https://github.com/DonnieFreedom/Empty.git
+    git remote add origin https://github.com/DonnieFreedom/AntWorld.git
     git branch -M 新建分支名
     # git pull -–rebase origin master # 把远程库中的更新合并到（pull=fetch+merge）本地库中，–-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中
     git push -u origin 新建分支名
@@ -64,11 +64,14 @@
     ```
 
   - ```
+    如果未关联远程仓库, 
+    请先执行git remote add origin https://github.com/DonnieFreedom/AntWorld.git
+    
     如果拉取不成功, 请先执行 git fetch
-    原因
+    原因:
     1, 远程没有该分支
     2, git branch -r 查看本地缓存的所有远程分支, 远程分支名不在本地缓存里, 故报错
     ```
-
+  
   
 

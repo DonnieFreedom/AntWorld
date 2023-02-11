@@ -75,6 +75,20 @@
   git clone 仓库地址
   ```
 
+- 设置commit用户名
+
+  ```
+  # 全局设置
+  git config --global user.name '张三'
+  git config --global user.email 'zs@gmail.com'
+  # 本地项目内设置, 即.git下的config
+  [user]
+  	name = 
+  	email = 
+  ```
+
+  
+
 ### 常规使用
 
 - [git官方文档](https://git-scm.com/doc)

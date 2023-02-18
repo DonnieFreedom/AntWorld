@@ -1,6 +1,14 @@
 # C# this关键字
 
+[Microsoft C# 编码约定](https://learn.microsoft.com/zh-cn/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+
+[Microsoft C# 参考](https://learn.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/618ayhy6(v=vs.110))
+
+[Microsoft C#文档](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
+
 在 C# 中，可以使用 this 关键字来表示当前对象，来访问类中的成员属性以及函数以及一些其它用法
+
+
 
 - #### 使用 this 表示当前类的对象
 
@@ -9,6 +17,8 @@
 - #### 使用 this 关键字作为类的索引器
 
 - #### 使用 this 关键字作为原始类型的扩展方法
+
+> 
 
 ```C#
 using System;

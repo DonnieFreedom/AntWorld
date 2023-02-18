@@ -1,6 +1,12 @@
 # C# switch语句
 
-语法格式如下:
+[Microsoft C# 编码约定](https://learn.microsoft.com/zh-cn/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+
+[Microsoft C# 参考](https://learn.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/618ayhy6(v=vs.110))
+
+[Microsoft C#文档](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
+
+switch语句语法格式如下:
 
 ```
 switch(表达式){

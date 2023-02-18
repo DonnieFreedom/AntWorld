@@ -1,8 +1,20 @@
 # C# Array类
 
-[官方文档](https://docs.microsoft.com/zh-cn/dotnet/api/system.array?view=netcore-3.1#properties)
+[Microsoft C# 编码约定](https://learn.microsoft.com/zh-cn/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
-Array 类是 C# 中所有数组的基类
+[Microsoft C# 参考](https://learn.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/618ayhy6(v=vs.110))
+
+[Microsoft C#文档](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
+
+Array 类是 C# 中所有数组的基类[Array: 数组](https://docs.microsoft.com/zh-cn/dotnet/api/system.array?view=netcore-3.1#properties)
+
+
+
+- ### Array 类中的属性
+
+- ### Array 类中的方法
+
+> 
 
 ### Array 类中的属性
 
